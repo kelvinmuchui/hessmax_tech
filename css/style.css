@@ -165,7 +165,7 @@ Main content
   height: 100%;
   width: 100%;
   overflow: hidden;
-  color: #ffffff;
+  color:black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -179,11 +179,17 @@ Main content
   display: table-cell;
   vertical-align: middle;
 }
+#computers{
+    background-image: url(pics/dell.jpg)
+}
 .cd-item:nth-of-type(1) {
-  background-color: #363558;
+  background-image: url(index.jpeg);
+    background-size: cover
 }
 .cd-item:nth-of-type(2) {
-  background-color: #544173;
+  background-image: url(2016.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 .cd-item:nth-of-type(3) {
   background-color: #dadcdc;
