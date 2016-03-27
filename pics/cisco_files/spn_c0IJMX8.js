@@ -1,0 +1,5 @@
+/*!CK:2807779728!*//*1458758266,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["Jngjm"]); }
+
+__d('ReactComposerSlideshowUtils',['ReactComposerPhotoStore','ReactComposerSlideshowStore','DOM','React','ReactDOM','SlideshowConstants','VideoUploadProcessingDialog.react'],function a(b,c,d,e,f,g){if(c.__markCompiled)c.__markCompiled();var h={isPagePostButtonDisabled:function(i){if(!c('ReactComposerSlideshowStore').isSlideshowSelected(i))return false;var j=c('ReactComposerPhotoStore').getPhotos(i).size;return j<c('SlideshowConstants').min_photo_num||j>c('SlideshowConstants').max_photo_num;},onPostSuccess:function(i){if(!i.payload)return;var j=i.payload[0],k=c('ReactDOM').render(c('React').createElement(c('VideoUploadProcessingDialog.react'),{videoID:j.video_fbid,show:true}),c('DOM').create('div'));k.show();},hasTooFewSlides:function(i){return c('ReactComposerPhotoStore').getPhotos(i).size<c('SlideshowConstants').min_photo_num;},hasTooManySlides:function(i){return c('ReactComposerPhotoStore').getPhotos(i).size>c('SlideshowConstants').max_photo_num;}};f.exports=h;},null);
